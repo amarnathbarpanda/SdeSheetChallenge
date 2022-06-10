@@ -40,13 +40,12 @@ public class MaxSubArrSum {
         long sum = 0;
         
         for(int i = 0; i < arr.length; i++){
-            if(sum >= 0)    
-                sum += arr[i];
-            else
-                sum = arr[i];
+            sum += arr[i];
             
             if(sum > maxSum)
-                maxSum = sum; 
+                maxSum = sum;
+            if(sum < 0)
+                sum = 0;
         }
         return maxSum;
     }
