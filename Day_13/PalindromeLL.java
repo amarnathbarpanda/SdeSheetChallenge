@@ -18,6 +18,31 @@ import java.io.*;
 public class PalindromeLL {
 
     //Brute force: tc = O(n), sc = O(n) 
+
+    // public static boolean isPalindrome(LinkedListNode<Integer> head) {
+    //     // Write your code here!
+    //     ArrayList<Integer> arr = new ArrayList<Integer>();
+    //     LinkedListNode<Integer> temp = head;
+        
+    //     while(temp != null){
+    //         arr.add(temp.data);
+    //         temp = temp.next;
+    //     }
+        
+    //     int start = 0;
+    //     int end = arr.size() - 1;
+        
+    //     while(start < end){
+    //         if((int)arr.get(start) != (int)arr.get(end))
+    //             return false;
+    //         start++;
+    //         end--;
+    //     }
+    //     return true;
+    // }
+
+    //OR
+
 	// public static boolean isPalindrome(LinkedListNode<Integer> head) {
 	// 	// Write your code here!
     //    Stack<Integer> st = new Stack<>();
